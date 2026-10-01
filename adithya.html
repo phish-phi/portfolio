@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adithya R – Python Full Stack Developer</title>
+<style>
+:root{--bg:#F2F6F3;--surface:#FFFFFF;--ink:#10231C;--muted:#51655C;--line:#D3DED8;--green:#0C4B33;--accent:#E8B20E;--onaccent:#10231C;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1A15;--surface:#112820;--ink:#E9F1ED;--muted:#9DB3A9;--line:#1F3B30;--green:#5FD0A0;--accent:#F2C230}}
+:root[data-theme="dark"]{--bg:#0B1A15;--surface:#112820;--ink:#E9F1ED;--muted:#9DB3A9;--line:#1F3B30;--green:#5FD0A0;--accent:#F2C230}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;justify-content:flex-end;padding:20px 0;font-size:15px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:40px 0 72px}
+h1{font:800 clamp(48px,9vw,96px)/.95 Georgia,"Times New Roman",serif;letter-spacing:-.03em;margin:0 0 20px;color:var(--green)}
+.role{font-size:22px;font-weight:600;margin:0 0 12px}
+.lead{color:var(--muted);max-width:46ch;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--green)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--onaccent)}
+.btn:hover{transform:translateY(-2px)}
+.code{background:#0A1F18;color:#CFE8DC;border-radius:14px;padding:22px;font:14px/1.7 ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;border:1px solid var(--line)}
+.code .k{color:#F2C230}.code .s{color:#7FE0B0}.code .c{color:#6E8C7F}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font:700 34px/1.2 Georgia,serif;margin:0 0 28px;color:var(--green)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about p{margin:0 0 16px}
+.stats{display:grid;gap:14px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+.stat b{display:block;font-size:18px}.stat span{color:var(--muted);font-size:15px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.skill{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.skill h3{margin:0 0 12px;font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:14px}
+.soft{margin-top:20px;color:var(--muted)}
+.tl{border-left:3px solid var(--accent);padding-left:24px}
+.tl h3{margin:0}.tl .meta{color:var(--muted);margin:2px 0 14px}
+.tl ul{margin:0;padding-left:20px}.tl li{margin-bottom:8px}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{margin:0 0 4px;font-size:18px}.card p{margin:0;color:var(--muted)}
+.proj{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
+.proj p{margin:0;max-width:52ch;color:var(--muted)}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.contact a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;text-decoration:none;overflow-wrap:anywhere}
+.contact a:hover{border-color:var(--green)}
+.contact small{display:block;color:var(--muted)}
+footer{padding:32px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){.hero,.about{grid-template-columns:1fr}nav{justify-content:flex-start}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<div>
+<h1>Adithya R</h1>
+<p class="role">Python Full Stack Developer</p>
+<p class="lead">I build secure, data-driven web apps with Django and REST APIs. Based in Palakkad, Kerala, and open to my first full-time role.</p>
+<div class="btns"><a class="btn main" href="#contact">Get in touch</a><a class="btn" href="https://github.com/phish-phi">View GitHub</a></div>
+</div>
+<pre class="code" aria-label="Summary as Python code"><span class="k">class</span> Developer:
+    name = <span class="s">"Adithya R"</span>
+    location = <span class="s">"Palakkad, Kerala"</span>
+    stack = [<span class="s">"Django"</span>, <span class="s">"DRF"</span>,
+             <span class="s">"MySQL"</span>, <span class="s">"React"</span>]
+    focus = <span class="s">"secure web apps"</span>
+    <span class="c"># open to work</span>
+    available = <span class="k">True</span></pre>
+</header>
+
+<section id="about">
+<h2>About me</h2>
+<div class="about">
+<div>
+<p>I'm a motivated Python full stack developer who has built dynamic web applications with Django, REST Framework, HTML, CSS, Bootstrap and JavaScript.</p>
+<p>I like security-focused solutions and multi-dashboard platforms, and I care about writing clean, efficient code as part of a collaborative team.</p>
+</div>
+<div class="stats">
+<div class="stat"><b>6-month internship</b><span>Techolas Technologies, Jan – Jul 2026</span></div>
+<div class="stat"><b>Cyber Secured Web Development</b><span>Diploma, Keltron / NIELIT, 2025</span></div>
+<div class="stat"><b>B.Sc. Mathematics</b><span>Calicut University, 2025</span></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div class="skill"><h3>Languages</h3><div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">PHP</span><span class="chip">SQL</span></div></div>
+<div class="skill"><h3>Frameworks &amp; libraries</h3><div class="chips"><span class="chip">Django</span><span class="chip">Django REST Framework</span><span class="chip">Bootstrap</span><span class="chip">React</span></div></div>
+<div class="skill"><h3>Database</h3><div class="chips"><span class="chip">MySQL</span></div></div>
+<div class="skill"><h3>Tools &amp; platforms</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Postman</span><span class="chip">Excel</span></div></div>
+<div class="skill"><h3>Concepts</h3><div class="chips"><span class="chip">REST APIs</span><span class="chip">User authentication</span><span class="chip">Cybersecurity</span><span class="chip">Multi-user dashboards</span></div></div>
+</div>
+<p class="soft">Beyond code: communication, team collaboration, problem solving, adaptability, time management and critical thinking.</p>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="tl">
+<h3>Python Full Stack Developer Intern</h3>
+<p class="meta">Techolas Technologies, Palakkad, Kerala · Jan 2026 – Jul 2026</p>
+<ul>
+<li>Architected full-stack web apps using Django, integrating RESTful APIs for seamless data flow.</li>
+<li>Implemented user authentication and authorization for secure access control.</li>
+<li>Built responsive UIs with HTML, CSS and Bootstrap to improve user experience.</li>
+<li>Managed MySQL databases, including schema design, complex queries and performance tuning.</li>
+<li>Collaborated with cross-functional teams to debug and deliver high-quality software.</li>
+</ul>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="edu">
+<div class="card"><h3>Diploma in Cyber Secured Web Development Associate</h3><p>Keltron Knowledge Centre / NIELIT, Calicut · 2025</p></div>
+<div class="card"><h3>B.Sc. Mathematics</h3><p>Mercy College / Calicut University, Palakkad · 2025</p><p>Coursework: Database Management, Programming Fundamentals, Web Technologies</p></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="proj">
+<p>My code, experiments and project repositories live on GitHub. Take a look at what I'm building.</p>
+<a class="btn main" href="https://github.com/phish-phi">Open GitHub</a>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact">
+<a href="mailto:adithyarajan698@gmail.com"><small>Email</small>adithyarajan698@gmail.com</a>
+<a href="tel:+916238354946"><small>Phone</small>+91 6238354946</a>
+<a href="https://linkedin.com/in/adithya-r"><small>LinkedIn</small>linkedin.com/in/adithya-r</a>
+<a href="https://github.com/phish-phi"><small>GitHub</small>github.com/phish-phi</a>
+</div>
+</section>
+<footer>© 2026 Adithya R · Palakkad, Kerala</footer>
+</div>
+</body>
+</html>
